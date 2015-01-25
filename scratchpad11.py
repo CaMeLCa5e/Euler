@@ -5,11 +5,13 @@
 
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms."""
 
-x = range (1,400000)
+x = range (1,4000)
 y = x[-1] + x[-2] 
 
-while x < 4000000:
-	x.append(y)
+while x < 40000:
+	if x % 2 == 0:
+		x.append(y) 
+
 print y
 
 
